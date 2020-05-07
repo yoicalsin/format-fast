@@ -25,10 +25,6 @@ export const strReplace = (
 ) => {
    if (isUndefined(replaces)) return source;
 
-   // Get key
-   let getKey = (v: any) =>
-      isString(brackets) ? (brackets as any).replace(/%s/g, v) : `$${v}`;
-
    // If is of string type !
    !isObj(replaces) && (replaces = [replaces]);
 
@@ -38,8 +34,12 @@ export const strReplace = (
       iterateFn = undefined;
    }
 
-   for (let [key, value] of Object.entries<any>(replaces)) {
-      // Data for bo sended
+   // For get the key with all the brackets
+   let getKey = (v: any) =>
+      isString(brackets) ? (brackets as any).replace(/%s/g, v) : `$${v}`;
+
+   for (const [key, value] of Object.entries<any>(replaces)) {
+      // Data for be sended
       let newKey = getKey(key);
       let newValue = value;
 
