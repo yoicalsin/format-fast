@@ -54,12 +54,12 @@ import { fmf } from 'format-fast';
 
 ### Individualmente
 
-Si desea solo enviar un solo dato !
+Si desea enviar solo un dato !
 
 ```ts
-const msg = "Hola tengo '$0' años";
+const msg = "Hola, tengo '$0' años";
 fmf(msg, 20);
-//=> Hola tengo '20' años
+//=> Hola, tengo '20' años
 ```
 
 #### Array
@@ -101,19 +101,41 @@ const iterateItem = (value, key) => {
    console.log(value, key);
    // 0: Yoni Calsin, fullname
    // 1: age, age
+
+   if (key == 'age') {
+      if (value > 18) {
+         value = 40;
+      } else {
+         value = 5;
+      }
+   }
+
+   if (key == 'fullname') {
+      value = `🎉 ${value}`;
+   }
+
    return value;
 };
 
 fmf(
    msg,
    {
-      fullname: 'Yoni Calsin',
-      age: 18,
+      fullname: '🎉 Yoni Calsin',
+      age: 20,
    },
    iterateItem,
 );
+// => Hola, soy '🎉 Yoni Calsin', tengo '40' años de edad
 
-// => Hola, soy 'Yoni Calsin', tengo '18' años de edad
+fmf(
+   msg,
+   {
+      fullname: '🎉 Samuel Calsin',
+      age: 10,
+   },
+   iterateItem,
+);
+// => Hola, soy '🎉 Samuel Calsin', tengo '5' años de edad
 ```
 
 Retorno de la function de `iterateItem`, como un array, si usted retorna un array de dos valores, estara remplazando la llave, y el valor
