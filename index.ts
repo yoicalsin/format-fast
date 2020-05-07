@@ -17,7 +17,7 @@ interface More {
  * @param iterateFn Function | string | undefined
  * @param brackets string | undefined
  */
-export const strReplace = (
+const formatFast = (
    source: string,
    replaces: More | string[] | string,
    iterateFn?: Function | string,
@@ -59,3 +59,6 @@ export const strReplace = (
 
    return source;
 };
+
+export default formatFast;
+export { formatFast as fmf };
