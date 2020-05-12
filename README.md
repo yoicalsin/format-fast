@@ -36,7 +36,7 @@ npm add --save format-fast
 
 First we import the function, as follows !
 
-Para utilizar `format-fast` podra utilizar la funcion `formatFast` o `f`, son practicamente lo mismo, solo que `f` es muy corta !
+To use `format-fast` you can use the `formatFast` or `f` function, they are practically the same, only `f` is very short !
 
 ```ts
 // For Typescript
