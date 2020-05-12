@@ -1,7 +1,7 @@
 {
    "name": "format-fast",
    "version": "1.0.1",
-   "description": "Format-fast !.",
+   "description": "format-fast is a function that allows you to replace certain words to make a text string dynamically, and very easily !",
    "main": "index.js",
    "type": "index.d.ts",
    "scripts": {
