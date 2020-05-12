@@ -3,4 +3,4 @@ interface More {
 }
 declare const formatFast: (source: string, replaces: string | string[] | More, iterateFn?: TimerHandler, brackets?: string) => string;
 export default formatFast;
-export { formatFast as fmf };
+export { formatFast as f };

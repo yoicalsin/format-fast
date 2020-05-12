@@ -30,5 +30,5 @@ var formatFast = function (source, replaces, iterateFn, brackets) {
     }
     return source;
 };
-exports.fmf = formatFast;
+exports.f = formatFast;
 exports.default = formatFast;
