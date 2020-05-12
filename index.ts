@@ -61,4 +61,4 @@ const formatFast = (
 };
 
 export default formatFast;
-export { formatFast as fmf };
+export { formatFast as f };
