@@ -1,8 +1,8 @@
 # format-fast
 
-Hola, soy [`Yoni Calsin`](https://twitter.com/yoicalsin), me encantaria que una oportunidad a format-fast, para que brille dentro de tu projecto, y para formatear una cadena de texto de manera maravillosa, y por supuesto con menos codigo.
+Hi, I'm [`Yoni Calsin`](https://twitter.com/yoicalsin), I'd love you to give format-fast a chance, to shine inside your project, and to format a text string in a wonderful way, and of course with less code.
 
-`Format-fast` es una funcion que te permite remplazar ciertas palabras para hacer una cadena de texto de manera dinamica, y muy facil !
+`Format-fast` is a function that allows you to replace certain words to make a string dynamically, and very easily !
 
 <a href="https://github.com/yoicalsin/format-fast"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
 <a href="https://www.npmjs.com/format-fast" target="_blank">
@@ -20,7 +20,7 @@ Hola, soy [`Yoni Calsin`](https://twitter.com/yoicalsin), me encantaria que una 
 
 ## 🍉 Installation
 
-> Primero tendremos que instalar, para poder utilizar este maravilloso paquete.
+> First we will have to install, in order to use this wonderful package.
 
 ```bash
 # Using npm
@@ -32,70 +32,67 @@ npm add --save format-fast
 
 ## 🌎 Usage
 
-`Format-fast` utilizar `is-all-utils` para validar el formato de diferentes caracteristicas !
+`Format-fast` use `is-all-utils` to validate the format of different characteristics !
 
-Primeramente importaremos la funcion, de la siguiente manera !
+First we import the function, as follows !
+
+Para utilizar `format-fast` podra utilizar la funcion `formatFast` o `f`, son practicamente lo mismo, solo que `f` es muy corta !
 
 ```ts
 // For Typescript
-import fmf from 'format-fast';
+import formatFast from 'format-fast';
+// Or
+import { f } from 'format-fast';
 
 // Javascript
-const fmf = require('format-fast');
-```
-
-## 🎁 Using Typescript
-
-```ts
-import fmf from 'format-fast';
+const formatFast = require('format-fast');
 // or
-import { fmf } from 'format-fast';
+const { f } = require('format-fast');
 ```
 
-### Individualmente
+### Individually
 
-Si desea enviar solo un dato !
+If you want to send just one piece of information !
 
 ```ts
-const msg = "Hola, tengo '$0' años";
-fmf(msg, 20);
-//=> Hola, tengo '20' años
+const msg = "Hello, I'm '$0' years old";
+f(msg, 20);
+//=> Hello, I'm '20' years old
 ```
 
 #### Array
 
-Llegó el momento de utilizar `format-parse`, mediante un array
+The time has come to use **format-parse**, using an array
 
 ```js
-const msg =
-   "El '$0' de el usuario '$1' no esta definido dentro de el objeto '$2'";
+const msg = "The '$0' of user '$1' is not defined within the object '$2";
 
-fmf(msg, ['nombre', 20, 'usuarios']);
-//=> El 'nombre' de el usuario '20' no esta definido dentro de el objeto 'usuarios'
+f(msg, ['name', 20, 'users']);
+//=> The 'name' of user '20' is not defined within the object 'users
 ```
 
-### Objeto
+### Object
 
-Enseguida utilizaremos con un objeto !
+Soon we will use it with an object !
 
 ```ts
 const msg =
-   "El '$property' de el usuario '$id' no esta definido dentro de el objeto '$data'";
+   "The '$property' of the user '$id' is not defined within the object '$data'";
 
-fmf(msg, {
-   property: 'nombre',
+f(msg, {
+   property: 'name',
    id: 20,
-   data: 'usuarios',
+   data: 'users',
 });
-//=> El 'nombre' de el usuario '20' no esta definido dentro de el objeto 'usuarios'
+//=> The 'name' of the user '20' is not defined within the object 'users'
 ```
 
-### Iterate function
+### Iteration function!
 
-Funcion para midificar el valor, y la llave cuando es iterado cada objeto !
+Function to modify the value, and the key when each object is iterated !
 
 ```ts
-const msg = "Hola, soy '$fullname', tengo '$age' años de edad";
+const msg = "Hi, I'm '$fullname', I'm '$age' years old";
 
 const iterateItem = (value, key) => {
    console.log(value, key);
@@ -117,33 +114,33 @@ const iterateItem = (value, key) => {
    return value;
 };
 
-fmf(
+f(
    msg,
    {
-      fullname: '🎉 Yoni Calsin',
+      fullname: 'Yoni Calsin',
       age: 20,
    },
    iterateItem,
 );
-// => Hola, soy '🎉 Yoni Calsin', tengo '40' años de edad
+// => Hi, I'm '🎉 Yoni Calsin', I'm '40' years old
 
-fmf(
+f(
    msg,
    {
-      fullname: '🎉 Samuel Calsin',
+      fullname: 'Samuel Calsin',
       age: 10,
    },
    iterateItem,
 );
-// => Hola, soy '🎉 Samuel Calsin', tengo '5' años de edad
+// => Hi, I'm '🎉 Samuel Calsin', I'm '5' years old
 ```
 
-Retorno de la function de `iterateItem`, como un array, si usted retorna un array de dos valores, estara remplazando la llave, y el valor
+Returning the `iterateItem` function, as an array, if you return an array of two values, you will be replacing the key, and the
 
 ```ts
 const iterateItem = (value, key) => {
-   // Esto remplazara los valores
-   // esto funciona si retorna dos valores
+   // This will replace the values
+   // this works if you return two values
    return [
       // For value
       value,
@@ -155,30 +152,30 @@ const iterateItem = (value, key) => {
 
 ### Brackets
 
--  `%s` es el valor de la llave
+-  `%s` is the value of the key
 
 ```ts
-const msg = "Hola, soy '{0}'";
+const msg = "Hi, I'm '{0}'.";
 
-fmf(msg, ['Yoni Calsin'], '{%s}');
+f(msg, ['Yoni Calsin'], '{%s}');
 
-// => Hola soy 'Yoni Calsin'
+// => Hi, I'm 'Yoni Calsin'.
 ```
 
 Otro ejemplo
 
 ```ts
-const msg = "Hola, soy '[[0]]'";
+const msg = "Hi, I'm '[[0]]'.";
 
-fmf(msg, ['Yoni Calsin'], '[[%s]]');
+f(msg, ['Yoni Calsin'], '[[%s]]');
 
-// => Hola soy 'Yoni Calsin'
+// => Hi, I'm 'Yoni Calsin'.
 ```
 
 ```ts
-fmt(msg, replaces, brackets);
+f(msg, replaces, brackets);
 // Or
-fmt(msg, replaces, iterateFunction, brackets);
+f(msg, replaces, iterateFunction, brackets);
 ```
 
 ## ⭐ Support for
