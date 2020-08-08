@@ -1,6 +1,6 @@
 {
    "name": "format-fast",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "description": "format-fast is a function that allows you to replace certain words to make a text string dynamically, and very easily !",
    "main": "index.js",
    "type": "index.d.ts",
@@ -13,7 +13,7 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/yoicalsin/format-fast.git"
+      "url": "git+https://github.com/yonicalsin/format-fast.git"
    },
    "keywords": [
       "format",
@@ -25,15 +25,15 @@
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
    "license": "MIT",
    "bugs": {
-      "url": "https://github.com/yoicalsin/format-fast/issues"
+      "url": "https://github.com/yonicalsin/format-fast/issues"
    },
-   "homepage": "https://github.com/yoicalsin/format-fast#readme",
+   "homepage": "https://github.com/yonicalsin/format-fast#readme",
    "devDependencies": {
       "nodemon": "^2.0.3",
       "prettier-plugin-packagejson": "^2.2.3",
       "rimraf": "^3.0.2"
    },
    "dependencies": {
-      "is-all-utils": "^1.0.3"
+      "is-all-utils": "^1.0.6"
    }
 }
