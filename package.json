@@ -34,7 +34,6 @@
       "rimraf": "^3.0.2"
    },
    "dependencies": {
-      "dotfast": "^1.0.2",
-      "is-all-utils": "^1.0.3"
+      "is-all-utils": "^1.0.6"
    }
 }
