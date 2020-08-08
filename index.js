@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.f = void 0;
 var is_all_utils_1 = require("is-all-utils");
 var formatFast = function (source, replaces, iterateFn, brackets) {
     if (is_all_utils_1.isUndefined(replaces))
