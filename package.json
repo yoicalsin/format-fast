@@ -13,7 +13,7 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/yoicalsin/format-fast.git"
+      "url": "git+https://github.com/yonicalsin/format-fast.git"
    },
    "keywords": [
       "format",
@@ -25,9 +25,9 @@
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
    "license": "MIT",
    "bugs": {
-      "url": "https://github.com/yoicalsin/format-fast/issues"
+      "url": "https://github.com/yonicalsin/format-fast/issues"
    },
-   "homepage": "https://github.com/yoicalsin/format-fast#readme",
+   "homepage": "https://github.com/yonicalsin/format-fast#readme",
    "devDependencies": {
       "nodemon": "^2.0.3",
       "prettier-plugin-packagejson": "^2.2.3",

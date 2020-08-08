@@ -1,22 +1,22 @@
 # format-fast
 
-Hi, I'm [`Yoni Calsin`](https://twitter.com/yoicalsin), I'd love you to give format-fast a chance, to shine inside your project, and to format a text string in a wonderful way, and of course with less code.
+Hi, I'm [`Yoni Calsin`](https://twitter.com/yonicalsin), I'd love you to give format-fast a chance, to shine inside your project, and to format a text string in a wonderful way, and of course with less code.
 
 `Format-fast` is a function that allows you to replace certain words to make a string dynamically, and very easily !
 
-<a href="https://github.com/yoicalsin/format-fast"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
+<a href="https://github.com/yonicalsin/format-fast"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
 <a href="https://www.npmjs.com/format-fast" target="_blank">
 <img src="https://img.shields.io/npm/v/format-fast" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/format-fast" target="_blank">
 <img src="https://img.shields.io/npm/l/format-fast" alt="Package License" /></a>
 <a href="https://www.npmjs.com/format-fast" target="_blank">
 <img src="https://img.shields.io/npm/dm/format-fast" alt="NPM Downloads" /></a>
-<a href="https://github.com/yoicalsin/format-fast" target="_blank">
+<a href="https://github.com/yonicalsin/format-fast" target="_blank">
 <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-<a href="https://github.com/yoicalsin/format-fast"><img src="https://img.shields.io/badge/Github%20Page-format.fast-yellow?style=flat-square&logo=github" /></a>
-<a href="https://github.com/yoicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-<a href="https://twitter.com/yoicalsin" target="_blank">
-<img src="https://img.shields.io/twitter/follow/yoicalsin.svg?style=social&label=Follow"></a>
+<a href="https://github.com/yonicalsin/format-fast"><img src="https://img.shields.io/badge/Github%20Page-format.fast-yellow?style=flat-square&logo=github" /></a>
+<a href="https://github.com/yonicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+<a href="https://twitter.com/yonicalsin" target="_blank">
+<img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 
 ## 🍉 Installation
 
@@ -27,7 +27,7 @@ Hi, I'm [`Yoni Calsin`](https://twitter.com/yoicalsin), I'd love you to give for
 npm install --save format-fast
 
 # Using yarn
-npm add --save format-fast
+yarn add format-fast
 ```
 
 ## 🌎 Usage
@@ -184,8 +184,8 @@ f(msg, replaces, iterateFunction, brackets);
 
 ## 🎩 Stay in touch
 
--  Author [Yoni Calsin](https://github.com/yoicalsin)
--  Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
+-  Author [Yoni Calsin](https://github.com/yonicalsin)
+-  Twitter [Yoni Calsin](https://twitter.com/yonicalsin)
 
 ## 🚀 Contributors
 
