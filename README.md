@@ -184,8 +184,11 @@ f(msg, replaces, iterateFunction, brackets);
 
 ## 🎩 Stay in touch
 
--  Author [Yoni Calsin](https://github.com/yonicalsin)
--  Twitter [Yoni Calsin](https://twitter.com/yonicalsin)
+-  Github [@yonicalsin](https://github.com/yonicalsin)
+-  Twitter [@yonicalsin](https://twitter.com/yonicalsin)
+-  Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
+-  Medium [@yonicalsin](https://medium.com/@yonicalsin)
+-  Dev [@yonicalsin](https://dev.to/yonicalsin)
 
 ## 🚀 Contributors
 
